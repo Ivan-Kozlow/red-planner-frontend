@@ -13,9 +13,9 @@ const options: CreateAxiosDefaults = {
 	withCredentials: true,
 }
 
-export const axiosClassic = axios.create(options)
+const axiosClassic = axios.create(options)
 
-export const axiosWithAuth = axios.create(options)
+const axiosWithAuth = axios.create(options)
 
 axiosWithAuth.interceptors.request.use((config) => {
 	const accessToken = getAccessToken()
@@ -45,7 +45,9 @@ axiosWithAuth.interceptors.response.use(
 			} catch (error) {
 				if (errorCatch(error) === 'jwt expired') removeTokenFromStorage()
 			}
-			throw error
 		}
+		throw error
 	}
 )
+
+export { axiosClassic, axiosWithAuth }
