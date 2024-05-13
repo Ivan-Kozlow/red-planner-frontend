@@ -1,0 +1,21 @@
+.sidebar {
+	@apply border-r border-r-border h-full bg-sidebar flex flex-col justify-between;
+}
+.link {
+	@apply flex items-center gap-2.5 p-layout border-b border-b-border;
+}
+.title {
+	@apply text-2xl font-bold relative;
+}
+.subtitle {
+	@apply absolute -right-8 -top-2 text-xs opacity-40 rotate-[13deg] font-bold;
+}
+.logout__link {
+	@apply p-3 relative;
+}
+.footer {
+	@apply text-xs opacity-40 font-normal p-layout text-center;
+}
+.thank__link {
+	@apply underline hover:text-purple-500 text-purple-300 transition-colors;
+}

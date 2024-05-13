@@ -5,7 +5,7 @@ class DASHBOARD {
 	TASKS = `${this.root}/tasks`
 	HABITS = `${this.root}/habits`
 	TIMER = `${this.root}/timer`
-	TIMER_BLOCKING = `${this.root}/timer-blocking`
+	TIME_BLOCKING = `${this.root}/timer-blocking`
 	SETTINGS = `${this.root}/settings`
 }
 
